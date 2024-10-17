@@ -1,14 +1,65 @@
 .home_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 50px;
-  
+  background-color: var(--white);
   .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 40px;
+
     img {
       width: 10vw;
+    }
+
+    .names_wrap {
+      position: relative;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      label.names {
+        font-size: 32px;
+        position: absolute;
+        &.off {
+          animation: disappear 1s ease 0s 1 normal forwards;
+        }
+        &.on {
+          animation: appear 1s ease 0s 1 normal forwards;
+        }
+      }
+    }
+
+    ul {
+      border-top: 1px solid var(--black);
+      border-bottom: 1px solid var(--black);
+      padding: 16px;
+      color: var(--black);
+
+      li {
+        display: flex;
+        list-style-type: none;
+        padding: 4px 0;
+        font-size: 12px;
+        width: 250px;
+        gap: 8px;
+
+        em {
+          width: 60px;
+          font-weight: 600;
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--black);
+
+          &:hover {
+            color: var(--secondary);
+            font-weight: 600;
+          }
+        }
+      }
     }
   }
 
@@ -17,26 +68,33 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    padding: 40px 0;
 
     .chapter {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 8px;
-  
-      h1 {
+
+      & > h1 {
         color: var(--black);
       }
-  
-      label {
+
+      & > label {
         color: var(--grey-80);
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        overflow: hidden;
+        gap: 20px;
+        padding: 35px;
       }
     }
   }
-  
+
   .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 40px;
     font-size: 12px;

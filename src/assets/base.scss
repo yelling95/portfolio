@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   font-family: 'Bitter', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
@@ -51,50 +51,6 @@ img {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-.gird {
-  display: grid;
-}
-.flex {
-  display: flex;
-  display: -webkit-flex;
-}
-.flex_inline {
-  display: inline-flex;
-  display: -webkit-inline-flex;
-}
-.flex_column {
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-}
-.flex_grow {
-  flex-grow: 1;
-  flex: 1;
-}
-.center {
-  align-items: center;
-  justify-content: center;
-}
-.flex_vertical_center {
-  align-items: center;
-}
-.flex_vertical_end {
-  align-items: flex-end;
-}
-.flex_horizontal_end {
-  justify-content: flex-end;
-}
-.flex_horizontal_center {
-  justify-content: center;
-}
-.flex_space_between {
-  justify-content: space-between;
-}
-.flex_grow {
-  flex-grow: 1;
-  flex: 1;
 }
 
 .dimm {

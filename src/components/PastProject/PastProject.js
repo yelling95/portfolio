@@ -8,7 +8,7 @@ function PastProject(props) {
   return (
     <div className="past_project_container">
       <label>
-        {year} / {position}{' '}
+        {year} ∙ {position}{' '}
       </label>
       <h2>{title}</h2>
       <div className="desc">{desc}</div>
@@ -19,7 +19,7 @@ function PastProject(props) {
       </div>
       <div className="tag_wrap">
         {map(tag, (t, idx) => (
-          <label key={`tag-${idx}`}>{t}</label>
+          <label key={`tag-${idx}`}>#{t}</label>
         ))}
       </div>
     </div>

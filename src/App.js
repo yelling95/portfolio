@@ -3,6 +3,8 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import {StompProvider} from './stomp'
 import {HomeView} from './pages'
 
+import './App.scss'
+
 export default function App(props) {
   const routerData = [
     {
@@ -14,8 +16,10 @@ export default function App(props) {
   const router = createBrowserRouter(routerData)
 
   return (
-    <StompProvider>
-      <RouterProvider router={router} />
-    </StompProvider>
+    <div className="app_container">
+      <StompProvider>
+        <RouterProvider router={router} />
+      </StompProvider>
+    </div>
   )
 }
