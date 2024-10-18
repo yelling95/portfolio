@@ -5,7 +5,7 @@ const DotenvWebpack = require('dotenv-webpack')
 
 module.exports = (env, argv) => {
   return {
-    mode: 'production',
+    mode: argv.mode,
     entry: './src/index.js',
     output: {
       path: path.resolve('./build'),
@@ -38,9 +38,13 @@ module.exports = (env, argv) => {
           use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif|ico|xlsx)$/,
+          test: /\.(png|jpg|jpeg|gif|ico|xlsx)$/,
           exclude: /node_modules/,
-          use: ['file-loader?name=[name].[ext]'], // 이미지 파일을 모듈로 사용할 수 있도록 변환하는 역할을 하는 로더이다.
+          type: 'asset',
+        },
+        {
+          test: /\.svg/,
+          use: ['@svgr/webpack'],
         },
       ],
     },

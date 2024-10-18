@@ -1,0 +1,33 @@
+.possible_scope_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -80px;
+
+  .contents_wrap {  
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 520px;
+    box-shadow: var(--shadow-card);
+    padding: 64px 32px 24px 32px;
+
+    h3 {
+      
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 32px;
+      padding: 40px 0;
+
+      em {
+        // display: inline-block;
+        // background: url('../../assets/images/highlight.png');
+        // background-repeat: space;
+        // height: 16px;
+      }
+    }
+  }
+}

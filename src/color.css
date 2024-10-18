@@ -2,8 +2,6 @@
   --black: #3a3a3a;
   --white: #ffffff;
   --white-80: rgba(255, 255, 255, 0.8);
-
-  // grey scale
   --grey-100: rgba(23, 23, 23, 1);
   --grey-90: rgba(46, 46, 46, 1);
   --grey-80: rgba(69, 69, 69, 1);
@@ -16,12 +14,10 @@
   --grey-10: rgba(232, 232, 232, 1);
   --grey-08: rgba(236, 236, 236, 1);
   --grey-04: rgba(246, 246, 246, 1);
-
   --shadow-01: 0px 4px 32px rgba(0, 0, 0, 0.1);
   --shadow-02: 0px 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-color: 0px 7px 32px rgba(38, 120, 167, 0.1);
   --shadow-card: 0px 3px 12px rgba(0, 0, 0, 0.08);
-
   --primary: #212121;
   --secondary: rgb(109 102 102);
   --point: #2FBE40;
@@ -31,13 +27,5 @@
 .gradient {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-    180deg,
-    hsl(0, 3%, 41%, 0.8) 0%,
-    hsl(0, 2%, 52%, 0.7) 29%,
-    hsl(0, 2%, 64%, 0.6) 43%,
-    hsl(0, 3%, 75%, 0.5) 57%,
-    hsla(0, 3%, 88%, 0.3) 71%,
-    hsla(0, 0%, 100%, 0) 100%
-  );
-}
+  background-image: linear-gradient(180deg, hsla(0, 3%, 41%, 0.8) 0%, hsla(0, 2%, 52%, 0.7) 29%, hsla(0, 2%, 64%, 0.6) 43%, hsla(0, 3%, 75%, 0.5) 57%, hsla(0, 3%, 88%, 0.3) 71%, hsla(0, 0%, 100%, 0) 100%);
+}/*# sourceMappingURL=color.css.map */

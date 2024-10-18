@@ -9,6 +9,10 @@
   box-shadow: var(--shadow-card);
   cursor: pointer;
 
+  &:hover {
+    background-color: pink;
+  }
+
   label {
     font-size: 12px;
     font-weight: 400;

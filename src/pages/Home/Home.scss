@@ -87,12 +87,15 @@
         color: var(--grey-80);
       }
 
+      & > div {
+        padding: 35px;
+      }
+
       .card {
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 1fr));
         overflow: hidden;
         gap: 20px;
-        padding: 35px;
         max-width: 1000px;
       }
 
@@ -100,6 +103,11 @@
         .card {
           grid-template-columns: 1fr;
         }
+      }
+
+      .mountain {
+        background-color: pink;
+        margin-top: 35px;
       }
     }
   }
