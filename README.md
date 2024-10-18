@@ -1,2 +1,3 @@
-Node.js v21.2.0
-React 18
+# 실행 환경
+
+- Node.js v21.2.0

@@ -1,5 +1,8 @@
 .home_container {
+  width: 100%;
+  overflow: hidden;
   background-color: var(--white);
+  
   .header {
     display: flex;
     flex-direction: column;
@@ -90,6 +93,13 @@
         overflow: hidden;
         gap: 20px;
         padding: 35px;
+        max-width: 1000px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {PastProject} from '../../components'
+import {PastProject, SkillMountain} from '../../components'
 import {split, map} from 'lodash-es'
 
 export const names = ['서예림', 'Seo Yelim', 'Veronica']
@@ -16,7 +16,8 @@ export const projects = [
     year: '2024년',
     position: position.b,
     title: '산업단지에너지관리시스템(CEMS)',
-    desc: '에너지 절감 목표와 공장 에너지 절감 요소를 크롤링 데이터 및 실시간 전력 데이터를 연동해 분석 및 평가하는 시스템 개발',
+    desc: '파워플래너 데이터와 실시간 전력데이터를 기반으로 에너지 절감 가이드 시스템 개발',
+    main: ['화면, API 개발 관리', '파워플래너 크롤링 담당', '데이터 집계 로직 담당'],
     lang: ['Spring Boot', 'PostgreSQL', 'ElastiCache', 'S3', 'Python', 'React', 'Sass', 'CI/CD'],
     tag: split('크롤링,ChatGPT', ','),
   },
@@ -24,7 +25,14 @@ export const projects = [
     year: '2024년',
     position: position.etc,
     title: 'Xergy 플랫폼',
-    desc: 'PEMS Client/Server, EMS, 전기차충전관리시스템(CSMS), Tracker, VPP 시스템을 통합 운영 및 관리, OCPP 1.6 프로토콜 인증 담당',
+    desc: '5개의 단위시스템 시스템으로 구성된 에너지 통합 운영시스템 개발',
+    main: [
+      'OCPP 1.6 프로토콜 인증',
+      '프로젝트 관리',
+      '플랫폼 전용 컴포넌트 개발',
+      'API 개발',
+      '데이터 에이전트 개발',
+    ],
     lang: [
       'Spring Boot',
       'PostgreSQL',
@@ -39,14 +47,16 @@ export const projects = [
       'Sass',
       'CI/CD',
       'Electron',
+      'Stroybook',
     ],
-    tag: split('MSA,아키텍처설계,자체컴포넌트모듈개발', ','),
+    tag: split('MSA,아키텍처설계,자체컴포넌트모듈개발,모노레포방식도입', ','),
   },
   {
     year: '2023년',
     position: position.b,
     title: '디지털트윈 기반의 가스환경설비 통합관제',
     desc: '대용량 데이터를 디지털트윈 시각화하여 도시가스사의 통합 관제 시스템 개발',
+    main: ['프로젝트 관리', '통합인증 API 개발', '화면 개발'],
     lang: ['Spring Boot', 'PostgreSQL', 'Oracle', 'MySQL', 'HEAVY.ai', 'Mapbox', 'Lit'],
     tag: split('GPUDB,새로운기술테스트', ','),
   },
@@ -55,6 +65,7 @@ export const projects = [
     position: position.b,
     title: '스마트모바일 하이브리드 앱 개발',
     desc: '도시가스 사의 점검용 어플리케이션 고도화, 카드결제단말기 및 카메라 기능 안드로이드 연동 개발',
+    main: ['프로젝트 관리', '안드로이드 앱 개발', '통합인증 시스템 개발'],
     lang: ['Android', 'Javascript', 'HTML', 'CSS'],
     tag: split('안드로이드개발,하이브리드앱', ','),
   },
@@ -62,7 +73,8 @@ export const projects = [
     year: '2022년',
     position: position.f,
     title: 'BIS(Business Intelligence System)',
-    desc: '경제성 분석, 단가 추이, 영업 관리 등 데이터를 유동적으로 추출하는 시스템 개발',
+    desc: '경제성 분석을 위한 대용량 데이터 추출 시스템 개발',
+    main: ['프로젝트 관리', '인프라 구축', '화면 개발'],
     lang: [
       'Node.js',
       'PostgreSQL',
@@ -80,6 +92,7 @@ export const projects = [
     position: position.etc,
     title: '통합 에너지플랫폼 개발',
     desc: 'EMS, DRMS, PVMS, DERMS, VPP TOC로 구성된 통합 에너지 플랫폼 개발',
+    main: ['화면 개발', '운영유지보수'],
     lang: ['Node.js', 'PostgreSQL', 'React', 'Websocket', 'Kafka', 'ElastiCache', 'S3'],
     tag: split('MSA,에너지산업이해', ','),
   },
@@ -87,9 +100,62 @@ export const projects = [
     year: '~ 2022년',
     position: position.etc,
     title: '포털 및 업무시스템 개발',
-    desc: '학교, 정부기관 내부 포털 및 업무시스템의 API 개발, 화면 개발, 다양한 벤더사와의 인터페이스 연동',
+    desc: '학교, 정부기관 대상의 포털 및 업무시스템 개발',
+    main: ['API 개발', '화면 개발', '운영유지보수', '인터페이스 개발'],
     lang: ['Spring', 'Oracle', 'Javascript', 'Jquery', 'Html', 'CSS'],
     tag: split('사업관리,전반적인 기술 습득', ','),
+  },
+]
+
+export const skills = [
+  {
+    id: 'Framework',
+    pos: [-10, 1.2, 3],
+    items: [
+      'SpringBoot',
+      'React',
+      'ReactNative',
+      'Webpack',
+      'Ionic',
+      'Flutter',
+      'Vue.js',
+      'Android',
+      'AngularJs',
+      'Next.js',
+    ],
+  },
+  {
+    id: 'Language',
+    pos: [-5, 1.2, -2],
+    items: ['Typescript', 'Javascript', 'Java', 'C++', 'Node.js', 'Python'],
+  },
+  {
+    id: 'ETC',
+    pos: [0, 1.2, 4],
+    items: ['Redis', 'Kafka', 'Celery', 'Redux', 'Gulp.js', 'Jquery'],
+  },
+  {
+    id: 'Infra/Web/WAS',
+    pos: [5, 1.2, 0],
+    items: [
+      'AWS',
+      'Docker',
+      'CI/CD',
+      'Linux',
+      'Ubuntu',
+      'Tomcat',
+      'PM2',
+      'Jeus',
+      'Jboss',
+      'Nginx',
+      'Weblogic',
+      'Resin',
+    ],
+  },
+  {
+    id: 'Repository',
+    pos: [10, 1.2, 6],
+    items: ['Git', 'SVN'],
   },
 ]
 
@@ -107,6 +173,8 @@ export const chapters = [
   },
   {
     subtitle: '스킬 산맥',
+    layout: 'mountain',
+    content: <SkillMountain skills={skills} />,
   },
   {
     subtitle: '가능한 업무 범위',
@@ -116,8 +184,5 @@ export const chapters = [
   },
   {
     subtitle: 'Tmi',
-  },
-  {
-    subtitle: '바라건대',
   },
 ]
