@@ -1,0 +1,33 @@
+.work_style_container {
+  width: 80vw;
+  height: 500px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 21px;
+  
+  user-select: none;
+  --webkit-user-select: none;
+
+  display: grid;
+  grid-template-columns: 150px auto;
+
+  background-color: var(--black);
+  border-radius: 8px;
+  
+  .folder_wrap {
+    border-right: 1px solid var(--secondary);
+    padding: 20px 16px;
+  }
+
+  .editor_wrap {
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .work_style_container {
+      max-width: 300px;
+    }
+}

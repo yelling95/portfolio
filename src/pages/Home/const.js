@@ -1,5 +1,5 @@
 import React from 'react'
-import {PastProject, SkillMountain, PossibleScope} from '../../components'
+import {PastProject, SkillMountain, PossibleScope, WorkStyle} from '../../components'
 import {split, map, reverse} from 'lodash-es'
 
 export const names = ['서예림', 'Seo Yelim', 'Veronica']
@@ -229,6 +229,8 @@ export const chapters = [
   },
   {
     subtitle: '업무 스타일',
+    layout: 'work',
+    content: <WorkStyle />,
   },
   {
     subtitle: 'Tmi',
