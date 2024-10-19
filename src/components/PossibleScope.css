@@ -17,4 +17,7 @@
   font-size: 16px;
   line-height: 32px;
   padding: 40px 0;
+}
+.possible_scope_container .contents_wrap .text em {
+  background-color: var(--point-tint);
 }/*# sourceMappingURL=PossibleScope.css.map */

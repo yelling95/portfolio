@@ -21,7 +21,7 @@
   --primary: #212121;
   --secondary: rgb(109 102 102);
   --point: #2FBE40;
-  --point-tint: rgba(47, 190, 64, 0.42);
+  --point-tint: rgba(47, 190, 64, 0.3);
 }
 
 .gradient {
