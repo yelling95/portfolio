@@ -71,7 +71,7 @@ function FolderContents(props) {
 }
 
 function Folder(props) {
-  const {defaultOpen = false, name = '폴더', style, children} = props
+  const {defaultOpen = false, name = '폴더', style, children, onClick} = props
 
   const [isOpen, setOpen] = useState(defaultOpen)
   const previous = usePrevious(isOpen)
@@ -88,7 +88,7 @@ function Folder(props) {
   }, [isOpen])
 
   return (
-    <div className="folder_container">
+    <div className="folder_container" onClick={onClick}>
       <FolderIcon
         className={className('folder_icon', isOpen && 'open')}
         onClick={() => setOpen(!isOpen)}
