@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Children} from 'react'
 import {PastProject, SkillMountain, PossibleScope, WorkStyle} from '../../components'
 import {split, map, reverse} from 'lodash-es'
 
@@ -18,7 +18,19 @@ export const projects = [
     title: '산업단지에너지관리시스템(CEMS)',
     desc: '파워플래너 데이터와 실시간 전력데이터를 기반으로 에너지 절감 가이드 시스템 개발',
     main: ['화면, API 개발 관리', '파워플래너 크롤링 담당', '데이터 집계 로직 담당'],
-    lang: ['Spring Boot', 'PostgreSQL', 'ElastiCache', 'S3', 'Python', 'React', 'Sass', 'CI/CD'],
+    lang: [
+      'Spring Boot',
+      'PostgreSQL',
+      'Querydsl',
+      'JPA',
+      'MyBatis',
+      'ElastiCache',
+      'S3',
+      'Python',
+      'React',
+      'Sass',
+      'CI/CD',
+    ],
     tag: split('크롤링,ChatGPT', ','),
   },
   {
@@ -36,6 +48,8 @@ export const projects = [
     lang: [
       'Spring Boot',
       'PostgreSQL',
+      'Querydsl',
+      'JPA',
       'ElastiCache',
       'S3',
       'Node.js',
@@ -57,7 +71,7 @@ export const projects = [
     title: '디지털트윈 기반의 가스환경설비 통합관제',
     desc: '대용량 데이터를 디지털트윈 시각화하여 도시가스사의 통합 관제 시스템 개발',
     main: ['프로젝트 관리', '통합인증 API 개발', '화면 개발'],
-    lang: ['Spring Boot', 'PostgreSQL', 'Oracle', 'MySQL', 'HEAVY.ai', 'Mapbox', 'Lit'],
+    lang: ['Spring Boot', 'PostgreSQL', 'JPA', 'Oracle', 'MySQL', 'HEAVY.ai', 'Mapbox', 'Lit'],
     tag: split('GPUDB,새로운기술테스트', ','),
   },
   {
@@ -205,6 +219,38 @@ export const scopes = [
   },
 ]
 
+export const styles = [
+  {
+    name: '일하는 방식',
+    contents: ``,
+  },
+  {
+    name: '중요한 것들',
+    contents: ``,
+  },
+  {
+    name: '강점과 장점',
+    contents: ``,
+  },
+  {
+    name: '코딩 스타일',
+    children: [
+      {
+        name: 'React',
+        contents: ``,
+      },
+      {
+        name: 'Node.js',
+        contents: ``,
+      },
+      {
+        name: 'Java',
+        contents: ``,
+      },
+    ],
+  },
+]
+
 export const chapters = [
   {
     subtitle: '지난 프로젝트들',
@@ -230,7 +276,7 @@ export const chapters = [
   {
     subtitle: '업무 스타일',
     layout: 'work',
-    content: <WorkStyle />,
+    content: <WorkStyle styles={styles} />,
   },
   {
     subtitle: 'Tmi',
