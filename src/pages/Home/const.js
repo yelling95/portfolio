@@ -64,6 +64,7 @@ export const projects = [
       'Stroybook',
     ],
     tag: split('MSA,아키텍처설계,자체컴포넌트모듈개발,모노레포방식도입', ','),
+    link: 'https://protective-bolt-eb7.notion.site/Xergy-79ac1ab9753f46409e72b04a0f1b06a8?pvs=4'
   },
   {
     year: '2023년',

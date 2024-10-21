@@ -3,10 +3,16 @@ import {map} from 'lodash-es'
 import './PastProject.scss'
 
 function PastProject(props) {
-  const {year, position, title = '', desc = '', main = [], lang = [], tag = []} = props
+  const {year, position, title = '', desc = '', main = [], lang = [], tag = [], link} = props
+
+  const handleClickProject = () => {
+    if (link) {
+      window.open(link, '_blank')
+    }
+  }
 
   return (
-    <div className="past_project_container">
+    <div className="past_project_container" onClick={handleClickProject}>
       <label>
         {year} ∙ {position}{' '}
       </label>
